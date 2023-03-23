@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clip path</title>
+</head>
+<body>
+<section>
+   <div class="box">
+   <img src="https://images.pexels.com/photos/371160/pexels-photo-371160.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Image Here">
+ </div>  
+  
+   <div class="box1">
+   <img src="https://images.pexels.com/photos/1073567/pexels-photo-1073567.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Image Here">
+ </div>  
+  
+</section>
+   
+
+
+</body>
+</html>
+
+
+
+css
+section{
+display:grid;
+  grid-template-columns:20em 20em;
+  column-gap:2em;
+}
+.box,.box1{
+  width:20em;
+  outline:.1px solid ;
+  margin-bottom:2em;
+}
+.box1{
+
+
+   transform: rotateY(180deg);
+}
+img{
+  display:block;
+  width:100%;
+  -webkit-clip-path: polygon(0 0, 63% 0, 93% 100%, 0 100%, 0% 75%, 0% 25%); clip-path: polygon(0 0, 63% 0, 93% 100%, 0 100%, 0% 75%, 0% 25%);
+     transform:  rotateX(360deg) ;
+  
+  
+
+}
+
+

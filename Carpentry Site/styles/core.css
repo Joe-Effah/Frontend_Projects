@@ -1,0 +1,110 @@
+.show {
+    padding: 7em 4em;
+    text-align: center;
+    background-image: url(../img/manu-schwendener-BORrEm_SYUY-unsplash.jpg);
+    background-color: rgba(0, 0, 0, 0.37);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.show a {
+    color: white;
+}
+
+.show h1 {
+    font-size: 3rem;
+    letter-spacing: .4em;
+}
+
+.show img {
+    height: 20%;
+}
+
+.show p {
+    font-size: 1.7rem;
+}
+
+nav {
+    text-align: center;
+    padding: 1.2em;
+    background-color:saddlebrown;
+    
+  
+}
+
+nav ul li a {
+    text-transform: capitalize;
+    padding-right: 1.3em;
+    color: white;
+  
+}
+
+nav ul .log {
+    text-align: end;
+    color: white;
+
+}
+
+.active{
+    color: rgb(58, 58, 58);
+}
+
+/* =================== ======== footer = ================  */
+
+footer {
+    padding: 2em 1em;
+    background-color: saddlebrown;
+    color: white;
+}
+
+footer .logo {
+    padding: 2em 0;
+}
+
+footer a {
+    color: transparent;
+    padding: 0 1em;
+}
+
+footer .first1 {
+    text-align: center;
+    padding-bottom: 3em;
+}
+
+footer .first1 p {
+    text-transform: capitalize;
+}
+
+footer .first1 .ico {
+    padding-bottom: 1em;
+}
+
+footer .first2 {
+    text-align: center;
+}
+
+footer .first2 p {
+    text-transform: capitalize;
+}
+.note::before{
+    content: '';
+    display: inline-block;
+        background-color: white;
+    width: 10em;
+    height: 4px;
+    margin: .3em;
+
+}
+.note::after{
+    content: '';
+    display: inline-block;
+        background-color: white;
+    width: 10em;
+    height: 4px;
+    margin: .3em;
+
+
+}

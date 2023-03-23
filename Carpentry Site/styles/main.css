@@ -1,0 +1,76 @@
+html {
+    scroll-behavior: smooth;
+}
+
+*,
+::before,
+::after {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.4;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+img {
+    width: 20%;
+    height: 20%;
+}
+
+ul {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+.fa-facebook {
+    color: rgb(23, 58, 173);
+}
+
+.fa-facebook-f {
+    color: rgb(23, 58, 173);
+}
+
+.fa-github {
+    color: black;
+}
+
+.fa-twitter {
+    color: dodgerblue;
+}
+
+.fa-whatsapp {
+    color: green;
+}
+
+.fa-snapchat {
+    color: rgb(236, 223, 35);
+}
+
+.fa-skype {
+    color: dodgerblue;
+}
+
+.fa-sistrix {
+    color: blue;
+}
+
+.fa-viber {
+    color: rgb(107, 30, 107);
+}
+
+.fa-youtube {
+    color: red;
+}

@@ -1,0 +1,57 @@
+@import url('./main.css');
+
+@import url('./core.css');
+
+section {
+    display: grid;
+    place-items: center;
+    padding: 1em 3.3em;
+}
+section h2{
+    font-size: 1.4rem;
+    padding: 2em 1em;
+}
+
+.imgbox{
+     display: grid;
+     place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    row-gap: 2.2em;
+
+   padding:2em 0;
+}
+.imgbox  img{
+display: block;
+width: 100%;
+height: auto;
+transition: all 9s;
+border: 8px solid saddlebrown;
+
+
+}
+.flip, .flip1{
+    width: 100%;
+}
+.imgbox img{
+    
+
+}
+
+
+.flip1{
+    /* transform: rotateX(180deg); */
+
+}
+.flip1 img{
+   transform: rotateX(20deg);
+   clip-path: polygon(0 0, 75% 0%, 55% 51%, 75% 100%, 0 100%, 0% 50%);
+}
+.flip{
+
+    transform: rotate(180deg);
+    clip-path: polygon(0 0, 75% 0%, 100% 50%, 75% 100%, 0 100%, 0% 50%);
+}
+.flip img{
+    transform: rotateX(180deg);
+
+}

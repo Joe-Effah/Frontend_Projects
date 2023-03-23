@@ -1,0 +1,56 @@
+@import url('./main.css');
+
+@import url('./core.css');
+
+main{
+    padding: 3em 1em;
+}
+section {
+    
+    display: grid;
+    place-items: center;
+    padding: 1em 3.3em;
+}
+#preface p{
+    max-width: 80ch;
+    line-height: 1.5;
+    padding: 1.4em 1.8em ;
+}
+#aboutus{
+    display: grid;
+    place-items: center;
+
+   row-gap: 2.2em;
+   column-gap: 1.2em;
+}
+#aboutus .content{
+    display: grid;
+    place-items: center;
+padding: 1em 2em;
+column-gap: 1em;
+row-gap: 10em;
+
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+ 
+
+}
+.content img{
+    display: block;
+    width: 60%;
+    height: auto;
+    clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+    border: 8px solid saddlebrown;
+    
+    }
+
+     /* #aboutus .content .contents p{
+        padding: 1em 2em;
+    }  */
+    #aboutus .content .contents h3{
+        padding: 1.4em 1em;
+    }
+    #aboutus .content .contents p{
+        max-width: 80ch;
+
+    } 
+

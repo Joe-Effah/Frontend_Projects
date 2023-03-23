@@ -1,0 +1,126 @@
+:root {
+    --main-text-Color: black;
+    --ticket-buy-color: #826B60;
+    --music-listen-color: #AB9C95;
+    --header-color: #826B60;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: var(--header-color);
+}
+section::selection{
+    outline: 2px solid black;
+}
+
+section {
+
+    padding: 2em clamp(2em, 1.7em, 3em);
+
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+
+    color: var(--main-text-Color);
+
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+audio {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: clamp(2.4rem, 1.8rem + 3vw, 3.7rem);
+}
+
+h2 {
+    font-size: clamp(2rem, 1rem + 3vw, 3rem);
+}
+
+h3 {
+    font-size: clamp(1rem, 1rem + 3vw, 2rem);
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: clamp(2.4rem, 1.8rem + 3vw, 3.7rem);
+    text-transform: uppercase;
+
+}
+footer {
+    padding: 6em clamp(2em, 1.7em, 3em);
+    box-shadow: 1px 1px 1px solid black;
+}
+
+footer p {
+    font-size: clamp(2rem, 1.5rem + 3vw, 3.7rem);
+
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.album-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+
+}
+
+.tour-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.decorater{
+    color: white;
+}
+
+
+/* // Element Styles  */
+
+#band-display {
+    background-color: var(--header-color);
+}
+
+/* //Desktop to Tablet Mode  */
+@media screen and (min-width:30em) {
+    body {
+        background-color: black;
+    }
+}
+
+/* //Mobile  Mode  */
+
+@media screen and (max-width:30em) {
+    /* body{
+       
+    } */
+}

@@ -1,0 +1,70 @@
+@import url('./main.css');
+
+@import url('./core.css');
+
+section {
+    display: grid;
+    place-items: center;
+    padding: 1em 3.3em;
+}
+
+section h2 {
+    font-size: 1.4rem;
+    padding: 1em 1em;
+}
+
+#serv p {
+    max-width: 80ch;
+}
+
+#serv {
+    padding-bottom: 4em;
+}
+
+#card .cardHold {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2.2em;
+    column-gap: 1.4em;
+}
+
+#card .cardHold .Scard {
+ width: 16em;
+    outline: 2px solid saddlebrown;
+}
+
+#card .cardHold .Scard img {
+    width: 100%;
+}
+#card .cardHold .Scard .stuff{
+    padding: 1em 2em ;
+}
+#card .cardHold .Scard .stuff h4{
+    font-size: 1.2rem;
+    padding: .7em 0;
+}
+#card .cardHold .Scard .stuff button{
+
+    margin-top: 1em;
+    padding: .6em  1em;
+    outline: none;
+    border-style: none;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color:saddlebrown ;
+    color: white;
+    cursor: pointer;
+}
+#card .cardHold .Scard .stuff button:hover{
+    background-color:white ;
+    color: saddlebrown;
+    outline: 1px solid saddlebrown;
+    transition: all .3s;
+}
+#Alsodo{
+    padding: 2em 1em;
+}
+.items{
+    max-width: 80ch;
+}

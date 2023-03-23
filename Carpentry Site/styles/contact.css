@@ -1,0 +1,151 @@
+@import url('./main.css');
+
+@import url('./core.css');
+
+section {
+    display: grid;
+    place-items: center;
+    padding: 1em 3.3em;
+}
+
+#contactdata h2 {
+    font-size: 1.4rem;
+    padding: 1em 2em;
+
+}
+
+#contactdata .box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+}
+
+
+#contactdata a {
+    text-decoration: underline;
+
+}
+
+#contactdata .box .text {
+    padding: 3em 2em;
+}
+
+#contactdata .box .text .mainfo {
+    padding-bottom: 2em;
+    color: black;
+}
+
+#contactdata .box .text p {
+    color: saddlebrown;
+}
+
+.mapouter iframe {
+    border: 8px solid saddlebrown;
+clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+    width: 100%;
+    min-height: 40ch;
+}
+
+
+form {
+    display: grid;
+    grid-template-areas: "fname lname"
+        "email  subject"
+        "textarea  textarea"
+        "submit  submit";
+    gap: 2em;
+    padding: 1.3em 3em;
+    padding-top: 3em;
+}
+
+.fname {
+    grid-area: fname;
+}
+
+.lname {
+    grid-area: lname;
+}
+
+.mes {
+    grid-area: textarea;
+
+}
+
+.mail {
+    grid-area: email;
+}
+
+.sub {
+    grid-area: subject;
+}
+
+.button {
+    grid-area: submit;
+}
+
+
+form span {
+
+    text-transform: capitalize;
+    padding-bottom: .5em;
+}
+
+.data1,
+.data2,
+.data3 {
+    padding: 1.2em 0;
+}
+
+
+
+input[type='text'] {
+    font-family: inherit;
+    width: 100%;
+    padding: .4em;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid saddlebrown;
+    font-size: 1.1rem;
+}
+
+input[type='email'] {
+    padding: .4em;
+    border: none;
+    border-bottom: 2px solid saddlebrown;
+    font-family: inherit;
+    width: 100%;
+    outline: none;
+
+}
+
+
+input[type='submit']{
+    outline: none;
+    border: none;
+   color: white;
+   font-family: inherit;
+   font-size: .8rem;
+    background-color: saddlebrown;
+   padding: 1em 2.4em;
+   cursor: pointer;
+} 
+input[type='submit']:hover{
+    background-color: white;
+    color: saddlebrown;
+   outline: 1px solid black ;
+    transition: background .2s;
+    
+
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    min-height: 10rem;
+    padding: .4em;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid saddlebrown;
+    font-family: inherit;
+
+}
