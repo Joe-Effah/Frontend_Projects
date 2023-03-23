@@ -1,0 +1,654 @@
+@import url('../fonts/fonts.css');
+
+*,::after,::before{
+margin: 0;
+padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --renner:'renner';
+    --spantan:'spartan';
+   --allblack:black;
+   --allwhite:white;
+}
+img{
+    width: 35%;
+}
+
+svg{
+    width: 20%;
+}
+
+/* CORE STYLES  */
+
+
+
+
+@media screen and (max-width:40em){
+    /* Mobile Screen  */
+    body{
+        /* background-color: red; */
+    }
+    header #phone{
+        text-align: center;
+        padding: .6em;
+    }
+    header #phone p{
+        padding: 1em .5em;
+        font-family: var(--spantan);
+    }
+       /* mobile Nav  */
+       header nav{
+           display: grid;
+           grid-template-columns: repeat(2,1fr);
+       }
+       header nav .links ul li{
+           display: none;
+       }
+       .hoverbox{
+        
+        border-radius: .1em;
+        
+        position: absolute;
+        right:1px;
+        transition: 2s ease-in;
+        width: 70%;
+        height: 100vh;
+        /* display: grid; */
+        grid-template-columns: 1fr;
+        background-color: rgba(219, 219, 219, 0.781);
+        outline: .5px solid rgb(146, 146, 146);
+        place-items: center;
+        display: none;
+    }
+    .hoverbox li{
+            display: block;   
+            margin: .8em;
+            
+     }
+     /* HEADER SECTION  */
+     header nav .links button{
+          display: block;
+          
+     }
+     header nav .links {
+         display: grid;
+         place-self: center;
+     }
+     /* MAIN SECTION  WORD  */
+     main .word p{
+        padding-bottom: 2em;
+        font-size: 1.6rem;
+        }
+        
+        main .word a{
+            text-align: center;
+           display: block; 
+           padding: .8em 1.4em;
+           margin-bottom:.9em ;
+           color: var(--allwhite);
+           text-decoration: none;
+         outline: 2px solid var(--allwhite);
+        }
+        /* Ad Info Section  */
+        main #adInfo .icons{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        main #adInfo .icons img{
+           width:100%;
+           display: inline-block;
+           
+        }
+        /* ad Market Section  */
+        main #admarket .boxes .card{
+            max-width: 100%;
+          padding: .5em 1em;
+          text-align: center;
+          margin: .4em;
+        }
+        main #admarket .boxes .card p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1rem;
+            padding-bottom: 1.2em;
+        }
+        main #admarket .boxes .card a{
+            color:black;
+        }
+        main #admarket .boxes .card img{
+            display: block;
+            width: 100%;
+        }
+        main #admarket  #content{
+           line-height: 1.6;
+           padding: 1.3em 0;
+           margin-bottom: 2em;
+           color:rgb(73, 73, 73);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        main #admarket  #content .color{
+            color: rgb(0, 0, 0);
+            padding-bottom: 1em;
+        }
+        main #admarket .work{
+           background-color: var(--allblack);
+           color: var(--allwhite);
+           font-family: var(--spantan);
+           padding: 1em 1.3em;
+        }
+        main #marserv{
+            padding: 3em 0;
+        }
+        main #marserv  h2{
+            padding:3em 0 ;
+        }
+        main #marserv .mar p{
+            line-height: 1.6;
+            padding: 1.6em 0;
+             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        main #marserv .mar{
+            padding: 2em 0;
+
+        }
+        main #marserv .mar a{
+            background-color: var(--allblack);
+           color: var(--allwhite);
+           font-family: var(--spantan);
+           padding: 1em 1.3em;
+        }
+        /*
+        ---
+        ---- 
+        BLog SECTION  */
+        main #blog{
+            
+        }
+        main #blog h5{
+            padding: 2em 0;
+        }
+        main #blog .container{
+            padding: 1.5em 0 ;
+        }
+
+      main #blog .container .card{
+    margin: 1em 0;
+      }
+      main #blog .container .a1{
+          position: relative;
+      }
+      main #blog .container .a1 p{
+          position: absolute;
+           margin: 0 auto;
+          inset: 0;
+          background-color: rgba(119, 119, 119, 0.459);
+          display: grid;
+          place-items: center;
+      }
+      main #blog .container .a2{
+        position: relative;
+    }
+    main #blog .container .a2 p{
+        position: absolute;
+         margin: 0 auto;
+        inset: 0;
+        background-color: rgba(119, 119, 119, 0.459);
+        display: grid;
+        place-items: center;
+    }
+    main #blog .container .a3{
+        position: relative;
+    }
+    main #blog .container .a3 p{
+        position: absolute;
+         margin: 0 auto;
+        inset: 0;
+        background-color: rgba(119, 119, 119, 0.459);
+        display: grid;
+        place-items: center;
+    }main #blog .container .a4{
+        position: relative;
+    }
+    main #blog .container .a4 p{
+        position: absolute;
+         margin: 0 auto;
+        inset: 0;
+        background-color: rgba(31, 27, 27, 0.363);
+        display: grid;
+        place-items: center;
+    }
+
+
+
+    main #blog a{
+        background-color: var(--allblack);
+        color: var(--allwhite);
+        font-family: var(--spantan);
+        padding: 1em 1.3em;
+    }
+
+
+
+    main #Client{
+      padding: 2em 0;
+    }
+    
+    main #Client .clbox .client img{
+        padding:2em 0;
+    }
+    main #Client .clbox .client p  {
+        line-height: 1.6;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    }
+    main #Client .clbox .client blockquote{
+        background-color: yellow;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    main #Client .clbox .client .space{
+        padding-bottom: 2em ;
+    }
+
+        
+}
+
+
+ header nav .links button{
+        display: none; 
+   }
+   header nav .hoverbox{
+       display: none;
+   }
+
+
+
+/* New section  */
+header #phone{
+    background-color: var(--allblack);
+    color:var(--allwhite);
+    padding: .6em;
+    font-family: var(--spantan);
+}
+
+/* New Section  */
+nav{
+    padding: 1em;
+    /* margin: 1em; */
+}
+nav .logo p{
+    font-family: var(--renner) ;
+font-size: 2.4rem;
+}
+nav  .links ul{
+    list-style-type: none;
+}
+
+nav  .links ul li{
+    padding:0 .7em ;
+}
+
+.marcolor{
+  background-color: var(--allblack);
+  color: var(--allwhite);
+}
+/* Main Section  */
+
+
+main #imgsection{
+    background-image: url("../img/pexels-canva-studio-3153198.jpg");
+    min-height: 78vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.425);
+    background-blend-mode: multiply;
+    display: grid;
+    place-items: center;
+    padding:1em  .7em;
+    color: var(--allwhite);
+    font-family: var(--spantan);
+    text-align: center;
+    
+
+}
+
+
+
+ /* Another Section  */
+main #adInfo{
+    padding: 0 2em;
+    margin-bottom: 2.5em;
+}
+main #adInfo .icons {
+    padding: 2em;
+}
+
+main #adInfo .icons img{
+    width: 30%;
+    padding-right: 2em;
+}
+main #admarket .boxes{
+    padding: 3em 0;
+}
+main #admarket h1{
+    text-align: center;
+    font-family: var(--spantan);
+    text-align: center;
+    font-weight: 400;
+    font-size: 2rem;
+
+}
+
+/* New Secton  */
+main #marserv{
+    padding: 0 2em;
+}
+
+main #marserv h2{
+    font-family:var(--spantan);
+    text-align: center;
+    font-size: 2.3rem;
+}
+main #marserv .mar{
+  padding:2em .3em; 
+ /* margin: .6em; */
+}
+main #marserv .mar h3,h4{
+    font-family: var(--spantan);
+    font-size: 1.9rem;
+}
+
+
+/* New Section  */
+
+main #blog{
+    padding: 0 2em;
+    /* position: relative; */
+    padding-bottom: 4em;
+    /* margin-bottom: 1em; */
+}
+#blog h5{
+    font-family: var(--spantan);
+    font-size: 1.9rem;
+    text-align: center;
+}
+
+#blog img{
+    display: block;
+    min-width: 100%;
+
+}
+
+#blog .container{
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+
+    
+}
+/* New Section  */
+
+main #Client{
+    padding: 0 2em;
+ padding-bottom: 3em;
+ margin-bottom: 2em;
+}
+main #Client h6{
+    font-family: var(--spantan);
+    font-size: 1.9rem;
+}
+main #Client h6 b{
+    font-style: italic;
+    
+}
+main .clbox{
+    padding-top:  1.5em;
+    padding-bottom: 1.5em;
+}
+
+main .clbox .client{
+   padding: 1.4em .4em; 
+}
+
+/* Footer Section  */
+
+footer{
+    background-color: var(--allblack);
+    color: var(--allwhite);
+    padding: 2.5em;
+    text-align: center;
+}
+footer  .mailCollector p {
+text-align: center;
+font-family: var(--spantan);
+}
+footer  .mailCollector form{
+    padding: 1.4em;
+}
+
+form #email{
+    font-family: var(--spantan);
+    min-width: 30vmax;
+    min-height: 4vmax;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: var(--allblack);
+    color:var(--allwhite);
+    margin-bottom: 2em;
+}
+
+button{
+    padding: 1em 2em;
+    font-family: var(--spantan);
+    outline: none;
+    border: 2px solid var(--allwhite);
+    border-radius: .5em;
+    background-color: var(--allblack);
+    color: var(--allwhite);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:40em){
+    /* Desktop Screen  */
+   header #phone{
+       display: grid;
+       grid-auto-flow: column;
+       padding:1.4em 0;
+       text-align: center;
+   }
+ 
+      /* Navigation Section  */
+ 
+      nav{
+          padding: 0;
+          display: grid;
+          grid-template-columns: .3fr 1fr;
+          place-items: center;
+      }
+      
+      nav .logo p{
+        font-family: var(--renner) ;
+          font-size: 1.8rem;
+    }
+
+    nav .links{
+        padding: 1.3em .1em;
+    }
+     nav .links li{
+  display: inline-block;
+
+  
+     }
+     nav .links li a{
+        padding: .3em 1em;
+ color: black;
+ text-decoration: none;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+     }
+     nav .links li a:hover{
+         background-color: black;
+         color:white;
+     }
+/* <========> END OF NAV <======>   */
+
+
+main #imgsection .word p {
+padding-bottom: 2.5em;
+font-size: 2rem;
+}
+main #imgsection .word a {
+    text-decoration: none;
+    margin-right: .8em;
+    padding: 1em 2em;
+    font-family: var(--spantan);
+    outline: none;
+    color:var(--allwhite);
+    border: 2px solid var(--allwhite);
+    border-radius: .5em;
+}
+
+
+/* <========> END OF NAV <======>   */
+
+/* <========> END OF ADINFO <======>   */
+
+     main  #adInfo .icons img{
+          width:8%;
+          
+
+      }
+/* <========> END OF ADINFO <======>   */
+
+main #admarket {
+   padding: 2.3em 4em;
+}
+main #admarket h1{
+    padding: .3em 0;
+}
+main #admarket .boxes{
+    /* //fOR fLEX boX  */
+display:grid;
+padding: 4em 6em;
+grid-template-columns: 1fr 1fr 1fr;
+
+
+}
+
+
+main #admarket .card{
+    display: inherit;
+    place-items: center;
+}
+      main #admarket .card svg{
+         width: 20%;
+         padding: 2em 0;
+      }
+      main #admarket .card p{
+          font-family: var(--spantan);
+          padding: 1em 0;
+      }
+      main #admarket .card a{
+          color:black;
+          text-decoration: underline;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+    
+      main #admarket > p{
+                padding: 1.6em 5em;
+                
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                line-height: 1.6;
+                font-size: 1.2rem;
+                margin: 0 auto;
+                
+    }
+    main #admarket .work{
+        font-family: var(--spantan);
+        /* text-align: center; */
+          display: inline-block;
+           padding: .8em 1.4em;
+           margin-left: 100px;
+           background-color: var(--allblack);
+           color: var(--allwhite);
+           text-decoration: underline;
+          
+         outline: 2px solid var(--allblack);
+    }
+      /* END OF ADMARKET  */
+      main #marserv{
+   padding: 2.3em 4em;
+          
+      }
+      #marserv .box{
+        display: grid;
+        grid-template-columns: 1fr;
+       padding:  0 4.3em;
+      }
+      #marserv .box .mar{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        font-size: 1.2rem;
+        max-width: 130ch;
+      }
+      #marserv .box .mar .end{
+          padding-bottom: 1.4em;
+      }
+      #marserv .box .mar a{
+        font-family: var(--spantan);
+          display: inline-block;
+           padding: .5em 1em;
+           background-color: var(--allblack);
+           color: var(--allwhite);
+           text-decoration: underline;
+
+         outline: 2px solid var(--allblack);
+      }
+      
+/* END OR MARSERV  */
+  
+main #blog{
+   padding: 2.3em 8em;
+
+}
+      main #blog .container  {
+        display:grid;
+        grid-auto-flow: column;
+        column-gap: 3em;
+        position: relative;
+      }
+     
+/* <========> END OF ADINFO <======>   */
+
+
+      main #Client .clbox .client {
+        
+
+      }
+   
+}
+/* // END OF HOMEPAGE  */

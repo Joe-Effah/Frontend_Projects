@@ -1,0 +1,96 @@
+*,::before,::after{
+    margin:0;
+    padding: 0;
+}
+header img{
+    /* For Icon  */
+    display: block;
+    max-width: 60%;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+@media screen and (min-width:40em) {
+    /* large Screen */
+   header img{
+      
+         max-width:38%; 
+        
+    }
+    svg{
+        display: none;
+    }
+    button{
+        display: none;
+    }
+    .hoverbox{
+        display: none;
+    }
+}
+@media screen and (max-width:40em){
+    /* Small Screen  */
+    svg{
+        display: block;
+    }
+    .nav ul{
+       display: none;
+    }
+    .hoverbox{
+        
+        border-radius: .1em;
+        
+        position: absolute;
+        right:1px;
+        transition: 2s ease-in;
+        width: 20vmax;
+        height: 40vmax;
+        /* display: grid; */
+        grid-template-columns: 1fr;
+        background-color: rgba(219, 219, 219, 0.781);
+        outline: .5px solid rgb(146, 146, 146);
+        place-items: center;
+        display: none;
+    }
+    .hoverbox li{
+            display: block;   
+            margin: .8em;
+            
+     }
+    
+    
+
+}
+
+header{
+    /* outline: 2px solid rgb(0, 0, 0); */
+    box-shadow: 0 0 4px  .2px black;
+  
+}
+nav{
+    
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   place-items: center;
+   position: relative;
+}
+
+svg{
+    fill: rgb(55, 129, 80);
+}
+
+.nav ul{
+list-style-type: none;
+
+}
+.nav li{
+    display: inline-block;   
+    margin: .8em;
+}
+.nav li a{
+    text-decoration: none;
+    color: black;
+    
+
+}

@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'renner';
+    
+    src: url('./renner-cufonfonts/Renner_\ 400\ Book.ttf') ;
+    }
+    
+
+   @font-face{
+       font-family: 'spartan';
+     
+       src:url('./spartan-cufonfonts/Spartan-Regular.ttf')
+   }
+  
