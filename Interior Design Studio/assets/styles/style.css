@@ -1,0 +1,482 @@
+@import url('./webfont/style.css');
+@import url('./webfonts2/stylesheet.css');
+:root {
+    --main-color: rgb(54, 81, 80);
+}
+/* core style for main section 
+
+ padding: .8em 2em;
+*/
+html {
+    scroll-behavior: smooth;
+}
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    display: block;
+    width: 20%;
+    height: 20%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Futura LT Regular', sans-serif;
+    font-weight: 300;
+}
+body {
+    font-family: 'Avenir LT 65';
+
+}
+.desk {
+    display: none;
+}
+.hum{
+    fill:white;
+}
+
+@media screen and (min-width:40em) {
+    /* huge Screen */
+    #responsive {
+        display: none;
+    }
+    .desk {
+        display: block;
+    }
+   
+    
+   
+}
+ 
+
+/* CORE STYLES  */
+
+body {
+    display: grid;
+
+}
+
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0.4em 0.2em;
+
+    background-color: var(--main-color);
+
+}
+header .logo {
+    display: grid;
+    place-items: center;
+}
+header .logo img {
+    display: block;
+    width: 25%;
+    height: auto;
+
+}
+
+nav {
+    display: grid;
+    place-items: center;
+}
+
+nav .desk ul {
+    list-style-type: none;
+}
+nav .desk ul li {
+    display: inline-block;
+}
+nav .desk ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Avenir LT 35', Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    padding: 0.3em 0.8em;
+}
+
+.hum {
+    color: white;
+}
+
+
+#home {
+    color: white;
+    padding-bottom: 0.8em;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    
+}
+#home .text {
+    /* margin: 35% 0; */
+    padding: 8em 2em 8em;
+    text-align: center;
+    background-color: var(--main-color);
+    /* place-self: center; */
+}
+
+@media screen and (max-width:40em) {
+    #home {
+        /* background-color: var(--main-color); */
+        grid-template-columns: 1fr;
+    }
+    #home .text {
+        text-align: start;
+    padding: 4em 2em 4em;
+       
+
+    }
+   
+    .float {
+    position: relative;
+       max-width: 70%;
+       margin: 2em auto;
+       
+
+    }
+    .float img{
+        border-radius: .4em;
+    }
+
+}
+
+#home .text h2 {
+    font-size: 3rem;
+    padding-bottom: 0.2em;
+}
+
+
+#home img {
+
+
+    width: 100%;
+    height: auto;
+}
+/* End Of Home Class  */
+#about {
+    padding: 2em 1em;
+}
+#hold{
+    position: relative;
+}
+ 
+
+ .float a {
+    font-family: 'Avenir LT 35', Arial, Helvetica, sans-serif;
+
+    position: absolute;
+    display: block;
+    top: 10em;
+    right: -5.7em;
+    transform: rotate(90deg);
+    /* core a styles  */
+   
+text-decoration: none;
+    color: black;
+    padding: 0.3em;
+
+
+} 
+
+.float img {
+
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+
+}
+
+
+
+
+
+@media screen and (min-width:40em) {
+    #home {
+        
+       min-height: 70vh; 
+       
+        /* place-self: center; */
+    }
+    .float{
+        position: relative;
+        
+        max-width: 60%;
+        top:5em;
+        left:20em;
+        bottom: 30px;
+        
+        
+    }
+    /* About Section  */
+    #about{
+        padding-bottom: 2.7em;
+    }
+
+    #about .content p {
+   max-width: 64ch;
+   line-height: 1.6rem;
+    }
+
+    #about .content h2 {
+        font-size: 2.5rem;
+    }
+
+
+    /* Services Section  */
+    #service {
+        padding-top:6vmax ;
+        margin-bottom: 9vmax;
+
+    }
+
+    #service h3{
+        font-size: 2.5rem;
+        padding-bottom: .8em;
+
+    }
+
+    .servicecards{
+       display: grid;
+       grid-template-columns: repeat(3,1fr);
+       /* Need Responsive Way for Colums  */
+       place-items: center;
+    } 
+     .servicecards .card h6{
+        font-size: 1.3rem;
+        padding: .8em;
+
+    }
+    .servicecards .card{
+        padding: .4em;
+          width: 80%;
+    border-radius: 0.2em;
+   
+    }
+
+         /* Project Section  */
+
+
+
+    #projects h4{
+        font-size: 2.5rem;
+        padding-block:1.4em ;
+     
+    }
+    #projects .projectcards{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        row-gap: 2.2em;
+       place-items: center;
+       margin-bottom: 1.8em;
+        
+    }
+    #projects .projectcards .pcard{
+        padding: .4em;
+        width: 87%;
+    }
+
+
+    #projects .button{
+        margin: 0 auto;
+        width: 13%;
+    }
+    
+
+    footer{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        place-items: center;
+
+    }
+    footer h5{
+        font-size: 1.8rem;
+    }
+
+    
+
+
+
+    
+}
+
+
+#about .content{
+ display: grid;
+ place-items: center;
+}
+#about .content h2 {
+    padding: 0.6em 0;
+}
+
+#about .content p {
+    padding-bottom: 0.6em;
+}
+
+#imageOver {
+    min-height: 60vh;
+    background-image: url('../img/pexels-vecislavas-popa-1643383.jpg');
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* Service Section  */
+#service {
+    padding: 0.8em 2em;
+}
+
+#service h3 {
+    text-align: center;
+    padding-top: 1.2em;
+}
+#service .servicecards .card {
+
+    padding: 0.6em 0.7em;
+    text-align: center;
+}
+#service .servicecards .card img {
+    margin: 0 auto;
+    width: 70%;
+    height: auto;
+}
+
+#service .servicecards .card p {
+    padding-bottom: 0.8em;
+}
+
+#service .servicecards .card a {
+    text-decoration: none;
+    color: black;
+    text-decoration: underline;
+}
+
+/* Project Section  */
+#projects {
+    padding: 0.8em 2em;
+    text-align: center;
+}
+
+#projects .projectcards {
+    padding-bottom: 0.4em;
+    
+}
+
+#projects .projectcards .pcard {
+    padding: 0.8em 0.2em;
+
+}
+#projects .projectcards .pcard h6 {
+    font-size: 1.2rem;
+    padding: 0.6em 0;
+}
+
+#projects .projectcards .pcard img {
+    margin: 0 auto;
+
+    width: 100%;
+    height: auto;
+}
+
+
+#projects .projectcards .pcard p {
+    padding-bottom: 0.8em;
+    color: rgb(48, 45, 45);
+}
+
+#projects .projectcards .pcard a {
+    text-align: center;
+    padding-bottom: 0.8em;
+    text-decoration: none;
+    color: black;
+    text-decoration: underline;
+}
+
+#projects .button {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 0.7em 0.1em;
+    border: 1px solid var(--main-color);
+    border-radius: 0.2em;
+}
+
+#contact {
+    padding: 0.8em 2em;
+    background-color: var(--main-color);
+    color: white;
+}
+
+#contact h5 {
+    font-size: 1.5rem;
+    padding: 0.9em 0;
+}
+
+#contact .form {
+    padding: 0.4em 0.3em;
+}
+#contact .form label {
+    display: block;
+    font-family: 'Avenir LT 35', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: white;
+
+
+}
+#contact form input {
+    width: 100%;
+    height: 2em;
+    border: none;
+    background-color: var(--main-color);
+    border-bottom: 2px solid white;
+    caret-color: white;
+    color: white;
+    outline: none;
+    margin-bottom: 0.5em;
+}
+
+
+footer {
+    padding: 0.6em 2em;
+}
+
+.sec1 {
+    padding: 0.9em;
+    font-size: 1.2em;
+
+}
+.sec1 img {
+    width: 70%;
+}
+
+.sec2,
+.sec3,
+.sec4 {
+    padding: 0.9em;
+}
+.sec2 h5 {
+    font-size: 1.2rem;
+}
+
+.sec3 h5 {
+    font-size: 1.2rem;
+}
+
+.sec4 h5 {
+    font-size: 1.2rem;
+}
+
+.sec4 a {
+    text-decoration: none;
+    color: black;
+    text-decoration: underline;
+}

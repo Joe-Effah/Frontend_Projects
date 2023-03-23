@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1rem;
+    line-height: 1.3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.gradient-button {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background-size: 120% auto;
+    background-image: linear-gradient(315deg, #833ab4 0%, #fd1d1d 50%, #fcb045);
+}
+
+.gradient-button:hover {
+    background-position: right center;
+}
+
+.gradient-button:hover:active {
+    top: 2px;
+}
+
+.button3d {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: #343a40;
+    box-shadow: 0 5px #212529;
+}
+
+.button3d :hover {
+    box-shadow: 0 3px #212529;
+    top: 1px;
+}
+
+.button3d:active {
+    box-shadow: 0 0 #212529;
+    top: 5px;
+}
+
+.blackberryButton {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
+    background: #4433ff;
+}
+
+.blackberryButton:hover {
+    background-color: #3a86ff;
+}
+
+.blackberryButton:active {
+    top: 2px;
+}
+
+.retrobutton {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border: 1px solid #000;
+    color: #000;
+    background: transparent;
+}
+
+.retrobutton:hover:after {
+    top: 0;
+    left: 0;
+}
+
+.retrobutton:after {
+    content: "";
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 5px;
+    left: 5px;
+    transition: 0.2s;
+    background-color: #80ed99;
+}
+
+.buttonSky {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
+    background: #4433ff;
+    z-index: 1;
+}
+
+.buttonSky:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.buttonSky:after {
+    border-radius: 5px;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
+    transition: all 0.3s ease;
+    background-color: #3a86ff;
+    right: 0;
+}
+
+.buttonSky:active {
+    top: 2px;
+}
+
+.main-button {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid #4433ff;
+    background: #4433ff;
+}
+
+.main-button:hover {
+    background: #fff;
+    color: #4433ff
+}
+
+.button-slide {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 2px solid #4433ff;
+    color: #4433ff;
+}
+
+.button-slide:hover {
+    color: #fff;
+}
+
+.button-slide:hover:after {
+    width: 100%;
+}
+
+.button-slide:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #4433ff;
+}
+
+
+/* ALL  BUTTON USED IN HERE
+==================== BUTTON CLASSNAME ===================== 
+.gradient-button
+.button-slide
+.main-button
+.buttonSky
+.retrobutton
+.blackberryButton
+.button3d
+==================== CLASSNAME ===================== 
+
+
+
+*================== ============= =CARDS ====================================*
+<div class="card">
+  <img src="img_avatar.png" alt="Avatar" style="width:100%">
+  <div class="container">
+    <h4><b>John Doe</b></h4>
+    <p>Architect & Engineer</p>
+  </div>
+</div
+CSS
+
+
+
+
+
+*/
+
+img {
+    width: 20%;
+    height: 20%;
+}
