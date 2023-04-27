@@ -1,0 +1,10 @@
+for (let index = 0; index < picSlot.length; index++) {
+    picSlot[index].src = ImageStore[index].path;
+    picSlot[index].alt = ImageStore[index].title;
+}
+
+Album.children[0].src= ImageStore[0].path;
+
+
+
+picSlot.forEach((slot)=> slot.addEventListener("click",(e)=>{Album.children[0].src = e.target.src}))

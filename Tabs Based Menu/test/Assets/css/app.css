@@ -1,0 +1,22 @@
+
+@import url(./core.css);
+
+.tab-button{
+    display: grid;
+    grid-auto-flow: column;
+}
+
+
+section{
+    margin: 2em;
+    padding: .4em ;
+    width: 30em;
+    box-shadow: 1px .2px 1px .6px black;
+
+}
+
+.mainContainer{
+    max-height:max-content;
+    margin: .3em;
+    padding:.6em;
+}

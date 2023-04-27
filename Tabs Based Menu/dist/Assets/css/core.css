@@ -1,0 +1,90 @@
+/* 
+
+        CORE CSS SETTINGS
+*/
+
+
+
+/* @import url('../Assets/fonts/fonts.css'); */
+
+:root {
+
+    /* --Headers_font: var(--jetbalck);
+--Paragrahs_font: var(--jetbalck);
+--buttons_font: var(--jetbalck); */
+    --color-main: black;
+    --color-comlement: white;
+    --paragraph-fonts_size: 1em;
+    --paragraph-font: monospace;
+}
+
+/* body{
+    /* Main Font Type to Use  
+} 
+*/
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: var(--color-main);
+}
+
+ul {
+    outline: .3px solid;
+}
+
+ul li {
+    list-style-type: none;
+
+}
+
+img {
+    width: 36%;
+    display: block;
+}
+
+
+
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ INPUT TYPES */
+input[type="text"] {
+
+    font-family: inherit, Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    padding: .2em;
+    height: 2em;
+    max-width: clamp(15em, 17em+ 1vw, 20em);
+    outline: none;
+    border: none;
+    outline: .4px solid black;
+
+}
+
+button {
+    font-size: 1rem;
+    font-family: var(--paragraph-font);
+    display: block;
+    max-width: max-content;
+    padding: .6em 2em;
+    outline: 1px solid black;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    transition: all .6s;
+    background-color: white;
+    color: black;
+}
