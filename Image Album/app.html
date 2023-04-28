@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script async src="./app.js"></script>
+</head>
+<body>
+    
+    <style>
+        .album{
+            /* font-family: monospace; */
+            max-width: 18em;
+            box-shadow: 1px 2px 2px black;
+        
+        }
+        .album img{
+            width: 100%;
+            display: block;
+            cursor: pointer;
+        }
+        .img-small{
+            display: grid;
+            grid-auto-flow: column;
+        }
+    </style>
+    <div class="album">
+        <img  alt="clip Image" class="main-display">
+        <div class="content">
+            <h3>My Heading</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis debitis perferendis eaque!</p>
+        </div>
+        <div class="img-small">
+            <img  alt="" width="100%" class="slot">
+            <img  alt="" width="100%" class="slot">
+            <img  alt="" width="100%" class="slot">
+            <img  alt="" width="100%" class="slot">
+        </div>
+    </div>
+</body>
+</html>
